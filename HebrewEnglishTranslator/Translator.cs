@@ -11,6 +11,7 @@ namespace HebrewEnglishTranslator
     internal class Translator : ITranslator
     {
         string credFilePath;
+        string test = "tttt";
         public Translator(string credFileLocation)
         {
             credFilePath = credFileLocation;
