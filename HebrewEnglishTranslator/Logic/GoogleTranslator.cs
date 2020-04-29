@@ -1,22 +1,16 @@
-﻿using System;
-using Google.Cloud.Translate.V3;
+﻿using Google.Cloud.Translate.V3;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace HebrewEnglishTranslator
 {
-    internal class Translator : ITranslator
+    internal static class GoogleTranslator
     {
-        string credFilePath;
-        string test = "tttt";
-        public Translator(string credFileLocation)
-        {
-            credFilePath = credFileLocation;
-        }
-        public string Translate(string textToTranslate, string sourceLanguage = "iw", string targetLanguage = "en")
+       
+        public static string Translate(string textToTranslate, string credFilePath, string sourceLanguage = "iw", string targetLanguage = "en")
         {
             TranslationServiceClientBuilder clientBuilder = new TranslationServiceClientBuilder();
             clientBuilder.CredentialsPath = credFilePath;

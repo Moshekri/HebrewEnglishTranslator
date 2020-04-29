@@ -115,10 +115,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ITranslator.cs" />
+    <Compile Include="Logic\GoogleTranslator.cs" />
+    <Compile Include="Interfaces\ITranslator.cs" />
+    <Compile Include="Logic\LevenshteinDistance.cs" />
+    <Compile Include="Logic\PhoneticTranslator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Translator.cs" />
-    <Compile Include="TranslatorFactory.cs" />
+    <Compile Include="Logic\TranslationPicker.cs" />
+    <Compile Include="Logic\Translator.cs" />
+    <Compile Include="Public Classess\TranslatorFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
