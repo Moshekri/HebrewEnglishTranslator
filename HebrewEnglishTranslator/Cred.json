@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "verdant-current-275412",
+  "private_key_id": "908fd0b0d774cd9950bcee0853f505da5221ac6e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCeyEpmfcem/r3C\nnlOcmfafcaQkgJcjbixH6Uq4BNhPiZreV2NiVTQfkz074T3tRlfJW39F47nXykN5\n+gLUQ3uJYLECYc5yQ4oWlR+7q7xWoSREgJewUwpNYwjMX3Hc2KNXhF9Lqu7Mmp+x\n2QDKbzJlsi10CcJedCbdDYnCtH8z/N1MtMsorhvOOhA8mAVqps6CfSkVvvRndDWb\n4e0kBCGLc7RFi6+7+xreFiaEmhWOVxRm/B+Uz+rp3KnBrTycroMYhUI1zQLimlqo\n3KVicPxWga6q+l+UCFs0w2/oVJQPgCwwHM/ZwKpve4g+smuUxKPv4Sd4uAXcI6tY\nCcuqCW6zAgMBAAECggEAKWpIra8FEnPDfy3Y1TH7d98mVzcLNPyZpDAfgxwQZ76W\nnIPislVTASFgiWvYwTjl0OmCqvIZGUXyj7A8aK0pXc3QnbRxKrCfJgDDhCnpOBdT\n5GI+LomaWFEKjHQguN/wyvUF/jCZlNiH6tWVNTgHxyrQXEHnZseZE3NiiVyXCTH0\nQbuNIGSy20R251gro3aAMwid47O5TC0rzVO1hCTIJkI6xLqXWzA3qHn8d7S4odVi\nRp7/5XjIwrg6H8wZxKG73z++QeWjjyxnnVkoT//jEjVyHTmNldMly9SEfuN804nA\nCxybVwhO9WqKsrF0z0wSvV/gqbUKOMVld3uKFZR98QKBgQDKknmTMeiYgEilpjSg\nexsB1HaewpGQv28R7ylf1HHeU9DTiyaquEjuasZh1j/qesyYclibV4ewGF3JeAbn\ngCbimM8vU5us0U34ErH0yWSdxm/lJYtf2M8JWCFWfNR4m+kNiIaaZpkdpH6QscxP\nEIheckAczgDhrf4dAHOEockFnwKBgQDIqSlatYnjwCFd81fgw04LIwGGRtAai3+s\nZfOa0kcMcw4uOsdSJOtPNt+sdFjnvGFbwdIskA8ylsZb5jxPDNemttQnKp5HpgLA\nT2iTaEDjo2F8Fc6u/W/WkIzjbODi8lay/n9wQEVxNhL64vLg3uq90PnwULbIcKVb\nlxmnT622bQKBgQCf+cUhRYzWwpicmQF+qznM3ClBf47NrSDeHO2jzHaQicilB4Nl\n11thTdmVcknPt2LUEZmANEPoAZYvgSaStFYBJYSZb4HFnRXiD4GSO2nGX+wGHvxO\nmT4Htx2826BAD4ChO2xxiwzop/t78a3T0s6fJ8MR/G4dy/aemLihydKjKQKBgQCc\nh/mOnVc3p0VgONgwqapT3bbuvIbSbkfmgJGMEMUD3S0OuyOJ3OsDHFdX/FruS3HX\nVldSE/8HA78xKWWadPY1QyI0e3aFhedXhZqagxU7ftQpLAnTUDjSNGjzcJft8gXY\nE9fuBPUm33vm4ut8p+iOslqHMS+lJNqZnEGS1wE38QKBgQCsexROBLIE0xq+HeN7\n2/RF/M98tvjJ1MIJrEBvqhmMSgqpdYWk6wQ7fgoLcNCA401ZiXph6gzEacoy2qKo\n+CWhUQYufjCTiANt7RRtFlvbQdHA12FRFgfqTE9bYW7+/xKKHSB5cx44ZJvU+Vwj\n3XnWh/P72Jle+ASjF+AnDx9Rzw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "tranlatioservicehmo@verdant-current-275412.iam.gserviceaccount.com",
+  "client_id": "103358195166924687594",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tranlatioservicehmo%40verdant-current-275412.iam.gserviceaccount.com"
+}
