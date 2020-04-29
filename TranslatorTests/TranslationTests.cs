@@ -12,7 +12,7 @@ namespace TranslatorTests
             var t = HebrewEnglishTranslator.TranslatorFactory.GetTranslator(@"C:\Users\moshe\Source\Repos\HebrewEnglishTranslator\HebrewEnglishTranslator\Cred.json");
             string text = t.Translate("משה קריכלי");
             Assert.AreEqual(text, "Moshe Kricheli");
-            string a = "GGG";
+            
 
         }
     }
