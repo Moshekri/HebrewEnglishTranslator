@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HebrewEnglishTranslator", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslatorTests", "TranslatorTests\TranslatorTests.csproj", "{3E23C7FD-FCAD-497D-A329-CDC2200EA44B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseCon", "DataBaseCon\DataBaseCon.csproj", "{88321BB6-F948-4CF6-8778-2C4FD3B04213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteDbTests", "SqliteDbTests\SqliteDbTests.csproj", "{D83E8F9E-AC5F-4616-B664-83019942DABF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{3E23C7FD-FCAD-497D-A329-CDC2200EA44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E23C7FD-FCAD-497D-A329-CDC2200EA44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E23C7FD-FCAD-497D-A329-CDC2200EA44B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88321BB6-F948-4CF6-8778-2C4FD3B04213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88321BB6-F948-4CF6-8778-2C4FD3B04213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88321BB6-F948-4CF6-8778-2C4FD3B04213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88321BB6-F948-4CF6-8778-2C4FD3B04213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D83E8F9E-AC5F-4616-B664-83019942DABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D83E8F9E-AC5F-4616-B664-83019942DABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D83E8F9E-AC5F-4616-B664-83019942DABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D83E8F9E-AC5F-4616-B664-83019942DABF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
