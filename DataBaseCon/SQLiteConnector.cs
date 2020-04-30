@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
+using System.Threading.Tasks;
 
 namespace DataBaseCon
 {
@@ -28,6 +30,30 @@ namespace DataBaseCon
 
 
 
+        }
+
+        public async Task<List<Names>> GetAllRecords()
+        {
+            using (var db = GetContext())
+            {
+                var data =  await db.Names.ToListAsync();
+                return data;
+            }
+        }
+
+        public  Names GetRecord(int id)
+        {
+            using (var db = GetContext())
+            {
+              return  db.Names.Find(new object[]{id});
+            }
+        }
+        public async Task<Names> GetRecord(string HebrewName)
+        {
+            using (var db = GetContext())
+            {
+                return await db.Names.FirstOrDefaultAsync(r => r.Hebrew == HebrewName);
+            }
         }
 
     }
