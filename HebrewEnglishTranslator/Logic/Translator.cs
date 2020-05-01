@@ -17,7 +17,8 @@ namespace HebrewEnglishTranslator
         }
         public string Translate(string textToTranslate, string sourceLanguage = "iw", string targetLanguage = "en")
         {
-            string googleTranslation = GoogleTranslator.Translate(textToTranslate,credPath);
+            var translator = new GoogleTranslator(credPath);
+            string googleTranslation = translator.Translate(textToTranslate);
             string phoneticTranslation = PhoneticTranslator.Translate(textToTranslate);
             string final = TranslationPicker.GetFinalName(textToTranslate, phoneticTranslation, googleTranslation);
             return final;

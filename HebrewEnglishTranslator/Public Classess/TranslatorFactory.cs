@@ -11,8 +11,7 @@ namespace HebrewEnglishTranslator
     {
         public static ITranslator GetTranslator(string credFilePath)
         {
-            Translator t = new Translator(credFilePath);
-            return t;
+            return new Translator(credFilePath);
         }
     }
 }
