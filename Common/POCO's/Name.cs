@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBaseCon
+namespace Common.Poco
 {
-   public class Names
+    public class Name
 
     {
         public int Id { get; set; }
@@ -15,9 +15,5 @@ namespace DataBaseCon
         public bool IsGoogle { get; set; }
         public string DateCreated { get; set; }
         public string DateUpdated { get; set; }
-       
-
-
-
     }
 }

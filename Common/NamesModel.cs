@@ -1,8 +1,9 @@
-namespace DataBaseCon
+namespace Common.Models
 {
     using System;
     using System.Data.Entity;
     using System.Linq;
+    using Common.Poco;
 
     public class NamesModel : DbContext
     {
@@ -16,7 +17,7 @@ namespace DataBaseCon
             : base("name=SqliteDB")
         {
         }
-        public virtual DbSet<Names> Names { get; set; }
+        public virtual DbSet<Name> Names { get; set; }
 
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 

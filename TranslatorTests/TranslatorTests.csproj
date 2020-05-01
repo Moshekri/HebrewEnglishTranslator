@@ -57,6 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{6dae72b9-dc23-459f-a457-e20770543bc5}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HebrewEnglishTranslator\HebrewEnglishTranslator.csproj">
       <Project>{52bc1002-d0cb-4cc1-946f-2761a0321baa}</Project>
       <Name>HebrewEnglishTranslator</Name>
