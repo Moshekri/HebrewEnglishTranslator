@@ -1,4 +1,5 @@
 ﻿using Common.Interfaces;
+using DataBaseCon.Factories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace HebrewEnglishTranslator
 {
     public static class TranslatorFactory
     {
-        public static ITranslator GetTranslator(string credFilePath)
+        public static ITranslator GetTranslator(string credFilePath,IDbConnector connector)
         {
-            return new Translator(credFilePath);
+                       return new Translator(credFilePath,connector);
         }
     }
 }

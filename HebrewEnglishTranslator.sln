@@ -19,11 +19,40 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{579AA02B-FDE5-4BA9-9A45-3769DBF08F8C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonData", "CommonData", "{4766A25E-2790-4BCB-9E40-39CE86DEF10D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{4766A25E-2790-4BCB-9E40-39CE86DEF10D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationService", "TranslationService\TranslationService.csproj", "{68AC3778-29F2-462E-BBB8-B495C319041C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCF Service", "WCF Service", "{72C5B5E5-9FDD-42DB-B993-EC155990663E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{1DA4B476-7DDC-4EB1-A40B-204530020389}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3A106774-3EC1-4566-8A14-B783886DD25E} = {3A106774-3EC1-4566-8A14-B783886DD25E}
+		{68AC3778-29F2-462E-BBB8-B495C319041C} = {68AC3778-29F2-462E-BBB8-B495C319041C}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TranslationServiceWebSite", "TranslationServiceWebSite\", "{3A106774-3EC1-4566-8A14-B783886DD25E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{6dae72b9-dc23-459f-a457-e20770543bc5}|Common.dll;{68ac3778-29f2-462e-bbb8-b495c319041c}|TranslationService.dll;{88321BB6-F948-4CF6-8778-2C4FD3B04213}|DataBaseCon.dll;{52BC1002-D0CB-4CC1-946F-2761A0321BAA}|HebrewEnglishTranslator.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50914"
+		Debug.AspNetCompiler.PhysicalPath = "TranslationServiceWebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50914\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50914"
+		Release.AspNetCompiler.PhysicalPath = "TranslationServiceWebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50914\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50914"
+		SlnRelativePath = "TranslationServiceWebSite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +84,14 @@ Global
 		{68AC3778-29F2-462E-BBB8-B495C319041C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68AC3778-29F2-462E-BBB8-B495C319041C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68AC3778-29F2-462E-BBB8-B495C319041C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA4B476-7DDC-4EB1-A40B-204530020389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA4B476-7DDC-4EB1-A40B-204530020389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA4B476-7DDC-4EB1-A40B-204530020389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA4B476-7DDC-4EB1-A40B-204530020389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A106774-3EC1-4566-8A14-B783886DD25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A106774-3EC1-4566-8A14-B783886DD25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A106774-3EC1-4566-8A14-B783886DD25E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A106774-3EC1-4566-8A14-B783886DD25E}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +103,7 @@ Global
 		{D83E8F9E-AC5F-4616-B664-83019942DABF} = {248DD8C6-351B-4FAF-BDE2-81CE3C24B8C3}
 		{6DAE72B9-DC23-459F-A457-E20770543BC5} = {4766A25E-2790-4BCB-9E40-39CE86DEF10D}
 		{68AC3778-29F2-462E-BBB8-B495C319041C} = {72C5B5E5-9FDD-42DB-B993-EC155990663E}
+		{3A106774-3EC1-4566-8A14-B783886DD25E} = {72C5B5E5-9FDD-42DB-B993-EC155990663E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0DC1576-E0CE-4939-9A61-1C03F3DA593B}

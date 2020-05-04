@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Poco;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Common.Interfaces
 {
     public interface ITranslator
     {
-        string Translate(string textToTranslate, string sourceLanguage = "iw", string targetLanguage = "en");
+        Name Translate(string textToTranslate, string sourceLanguage = "iw", string targetLanguage = "en");
     }
 }

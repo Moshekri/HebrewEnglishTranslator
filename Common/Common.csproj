@@ -54,7 +54,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\IDbConnector.cs" />
     <Compile Include="Interfaces\ITranslator.cs" />
-    <Compile Include="NamesModel.cs" />
+    <Compile Include="Models\NamesModel.cs" />
     <Compile Include="POCO%27s\Name.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

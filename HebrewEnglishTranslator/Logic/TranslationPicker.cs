@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Poco;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -65,7 +66,7 @@ namespace HebrewEnglishTranslator
 
         }
 
-        public static string GetFinalName(string hebrew, string phonetic, string google)
+        public static Name GetFinalName(string hebrew, string phonetic, string google)
         {
 
             double googleTranslationQuality = GetGoogleTranslationQuality(google, phonetic);
@@ -73,11 +74,23 @@ namespace HebrewEnglishTranslator
 
             if (googleTranslationQuality < 50 || (google.Length > 8 ? q1 >= 6 : q1 > 4))
             {
-                return phonetic;
+                return new Name()
+                {
+                    DateCreated = DateTime.Now.ToString(),
+                    English = phonetic,
+                    Hebrew = hebrew,
+                    IsGoogle = false
+                };
             }
             else
             {
-                return google;
+                return new Name()
+                {
+                    DateCreated = DateTime.Now.ToString(),
+                    English = google,
+                    Hebrew = hebrew,
+                    IsGoogle = true
+                };
             }
 
         }

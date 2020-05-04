@@ -9,7 +9,7 @@ using Common.Poco;
 
 namespace DataBaseCon
 {
-    public class SQLiteConnector 
+    public class SQLiteConnector :IDbConnector
     {
         public NamesModel GetContext()
         {

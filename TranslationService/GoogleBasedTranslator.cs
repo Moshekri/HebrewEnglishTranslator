@@ -1,4 +1,6 @@
-﻿using Common.Poco;
+﻿using Common.Interfaces;
+using Common.Poco;
+using DataBaseCon.Factories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +15,9 @@ namespace TranslationService
     {
         public Name Translate(string HebrewText)
         {
-            throw new NotImplementedException();
+            IDbConnector connector = DbConnectorFactory.GetDbConnector();
+            var translator = HebrewEnglishTranslator.TranslatorFactory.GetTranslator(@"C:\IISSites\TranslationService\Bin\cred.json", connector);
+            return translator.Translate(HebrewText);
         }
     }
 }
