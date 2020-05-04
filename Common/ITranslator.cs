@@ -9,8 +9,9 @@ namespace Common.Interfaces
 {
     public interface ITranslator
     {
-        Name GetFirstName(string hebrewFirstName);
-        Name GetLastName(string HebrewLastName);
+        Name Translate(string textToTranslate, string sourceLanguage = "iw", string targetLanguage = "en");
+        Name TranslateFirstName(string hebrewFirstName);
+        Name TranslateLastName(string HebrewLastName);
 
     }
 }

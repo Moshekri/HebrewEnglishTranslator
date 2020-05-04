@@ -20,13 +20,16 @@ namespace HebrewEnglishTranslator
         }
         public Name Translate(string textToTranslate, string sourceLanguage = "iw", string targetLanguage = "en")
         {
-            var translator = new GoogleTranslator(credPath);
-            string googleTranslation = translator.Translate(textToTranslate);
-            string phoneticTranslation = PhoneticTranslator.Translate(textToTranslate);
-
-            Name final = TranslationPicker.GetFinalName(textToTranslate, phoneticTranslation, googleTranslation);
-            return final;
-
+           Name translatedFirstName = TranslateFirstName(GetFirstName(textToTranslate));
+           Name translatedLastName = TranslateLastName(GetLastName(textToTranslate));
+            return new Name()
+            {
+                DateCreated = DateTime.Now.ToString(),
+                DateUpdated = DateTime.Now.ToString(),
+                English = translatedFirstName.English + " " + translatedLastName.English,
+                Hebrew = translatedFirstName.Hebrew + " " + translatedLastName.Hebrew,
+                IsGoogle = translatedLastName.IsGoogle && translatedFirstName.IsGoogle
+            };
         }
 
         private Name[] GetNames(string[] words)
@@ -44,18 +47,59 @@ namespace HebrewEnglishTranslator
             return dbConnector.GetRecord(hebrewText).Result;
         }
 
-        public Name GetFirstName(string hebrewFirstName)
+        public Name TranslateFirstName(string hebrewFirstName)
         {
             string lastName = "כהן";
-            var res = Translate(hebrewFirstName + " " + lastName);
-            return res;
+            var res = TranslateFirstName(hebrewFirstName + " " + lastName);
+            string GoogleHebrewName = GetFirstName(res.Hebrew);
+            string phoneticHebrewName = PhoneticTranslator.Translate(hebrewFirstName);
+            return TranslationPicker.GetFinalName(hebrewFirstName,phoneticHebrewName,GoogleHebrewName);
         }
 
-        public Name GetLastName(string HebrewLastName)
+        public Name TranslateLastName(string HebrewLastName)
         {
-            string firstName = "ליאת";
-            var res = Translate(firstName + " " + HebrewLastName);
-            return res;
+            string firstNmae = "ליאת";
+            var res = TranslateFirstName(firstNmae + " " + HebrewLastName);
+            string GoogleHebrewName = GetFirstName(res.Hebrew);
+            string phoneticHebrewName = PhoneticTranslator.Translate(HebrewLastName);
+            return TranslationPicker.GetFinalName(HebrewLastName, phoneticHebrewName, GoogleHebrewName);
         }
+
+        private string GetLastName(string hebrewText)
+        {
+            string temp = string.Empty;
+            bool pastFirstName = false;
+            foreach (char c in hebrewText)
+            {
+                if (c == ' ')
+                {
+                    pastFirstName = true;
+                }
+                else if (pastFirstName)
+                {
+                    temp += c;
+                }
+            }
+            return temp;
+        }
+
+        private string GetFirstName(string hebrewText)
+        {
+            string temp = string.Empty;
+            foreach (char c in hebrewText)
+            {
+                if (c != ' ')
+                {
+                    temp += c;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return temp;
+        }
+
+        
     }
 }

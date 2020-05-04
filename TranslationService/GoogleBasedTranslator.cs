@@ -22,8 +22,8 @@ namespace TranslationService
             string firstName = GetFirstName(HebrewText);
             string LastName = GetLastName(HebrewText);
 
-            Name translatedFirstName = translator.GetFirstName(firstName);
-            Name translatedLastName = translator.GetFirstName(LastName);
+            Name translatedFirstName = translator.TranslateFirstName(firstName);
+            Name translatedLastName = translator.TranslateLastName(LastName);
             Name Final = new Name() 
             {
                 DateCreated = DateTime.Now.ToString(),
