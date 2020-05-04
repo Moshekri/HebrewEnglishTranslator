@@ -114,12 +114,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\Sr1\Reference.cs">
+    <Compile Include="Connected Services\TranslationService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\Sr2\Reference.cs">
+    <Compile Include="Connected Services\TS2\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -129,30 +129,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\Sr1\Common.Poco.xsd">
+    <None Include="Connected Services\TranslationService\GoogleBasedTranslator.wsdl" />
+    <None Include="Connected Services\TranslationService\Service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\Sr1\service.wsdl" />
-    <None Include="Connected Services\Sr1\service.xsd">
+    <None Include="Connected Services\TranslationService\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\Sr1\service1.xsd">
+    <None Include="Connected Services\TranslationService\Service2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\Sr1\TestClient.Sr1.Name.datasource">
+    <None Include="Connected Services\TranslationService\TestClient.TranslationService.Name.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\Sr2\GoogleBasedTranslator.wsdl" />
-    <None Include="Connected Services\Sr2\Service.xsd">
+    <None Include="Connected Services\TS2\Common.Poco.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\Sr2\Service1.xsd">
+    <None Include="Connected Services\TS2\service.wsdl" />
+    <None Include="Connected Services\TS2\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\Sr2\Service2.xsd">
+    <None Include="Connected Services\TS2\service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\Sr2\TestClient.Sr2.Name.datasource">
+    <None Include="Connected Services\TS2\TestClient.TS2.Name.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -161,32 +161,32 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\Sr1\" />
-    <WCFMetadataStorage Include="Connected Services\Sr2\" />
+    <WCFMetadataStorage Include="Connected Services\TranslationService\" />
+    <WCFMetadataStorage Include="Connected Services\TS2\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Sr1\configuration91.svcinfo" />
+    <None Include="Connected Services\TranslationService\Service.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Sr1\configuration.svcinfo" />
+    <None Include="Connected Services\TranslationService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Sr1\Reference.svcmap">
+    <None Include="Connected Services\TranslationService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\TranslationService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Sr2\Service.disco" />
+    <None Include="Connected Services\TS2\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Sr2\configuration91.svcinfo" />
+    <None Include="Connected Services\TS2\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Sr2\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\Sr2\Reference.svcmap">
+    <None Include="Connected Services\TS2\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

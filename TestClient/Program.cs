@@ -10,8 +10,8 @@ namespace TestClient
     {
         static void Main(string[] args)
         {
-            Sr2.TranslatorClient c = new Sr2.TranslatorClient();
-            Console.WriteLine(c.Translate("משה קריכלי").English);
+            TS2.TranslatorClient c = new TS2.TranslatorClient();
+            Console.WriteLine(c.Translate("חיים קריכלי").English);
         }
     }
 }

@@ -52,10 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IDbConnector.cs" />
-    <Compile Include="Interfaces\ITranslator.cs" />
-    <Compile Include="Models\NamesModel.cs" />
-    <Compile Include="POCO%27s\Name.cs" />
+    <Compile Include="IDbConnector.cs" />
+    <Compile Include="ITranslator.cs" />
+    <Compile Include="NamesModel.cs" />
+    <Compile Include="Name.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

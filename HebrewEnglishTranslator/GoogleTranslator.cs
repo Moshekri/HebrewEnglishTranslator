@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace HebrewEnglishTranslator
 {
-    internal  class GoogleTranslator 
+    internal class GoogleTranslator
     {
         string credFilePath;
         internal GoogleTranslator(string CredFilePath)
         {
             this.credFilePath = CredFilePath;
         }
-        private  string GoogleTranslate(string textToTranslate, string sourceLanguage = "iw", string targetLanguage = "en")
+        private string GoogleTranslate(string textToTranslate, string sourceLanguage = "iw", string targetLanguage = "en")
         {
             TranslationServiceClientBuilder clientBuilder = new TranslationServiceClientBuilder();
             clientBuilder.CredentialsPath = credFilePath;
@@ -31,6 +31,7 @@ namespace HebrewEnglishTranslator
             };
             try
             {
+                
                 var translationResults = translationClient.TranslateText(req);
                 return translationResults.Translations[0].TranslatedText;
             }
@@ -42,7 +43,7 @@ namespace HebrewEnglishTranslator
 
         internal string Translate(string textToTranslate, string sourceLanguage = "iw", string targetLanguage = "en")
         {
-            return GoogleTranslate(textToTranslate,sourceLanguage,targetLanguage);
+            return GoogleTranslate(textToTranslate, sourceLanguage, targetLanguage);
         }
     }
 }

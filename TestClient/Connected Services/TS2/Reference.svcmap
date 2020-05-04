@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="326aec1f-98ee-4e32-8c84-9b4570f2fa93" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7809aa33-0872-465a-9d92-16c31361e62b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:8104/TranslationService/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="a1b0a2ed-5228-40b9-b27b-1bc40b475255" SourceId="1" SourceUrl="http://localhost:8104/TranslationService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="68df55b5-3d82-4aa3-a404-13afa21a45b4" SourceId="1" SourceUrl="http://localhost:8104/TranslationService/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="e7a6308a-1eca-452e-8759-82227aee7a80" SourceId="1" SourceUrl="http://localhost:8104/TranslationService/mex" />
-    <MetadataFile FileName="Common.Poco.xsd" MetadataType="Schema" ID="91749b7c-55c8-4afb-980d-d8e4f5e3ef29" SourceId="1" SourceUrl="http://localhost:8104/TranslationService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="376069f7-ee4f-449f-b69c-b522e8b0e083" SourceId="1" SourceUrl="http://localhost:8104/TranslationService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="dc3acd29-9336-4336-9e08-57b5f998c622" SourceId="1" SourceUrl="http://localhost:8104/TranslationService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6d14bb46-816a-4bc5-8569-b72f3d5db63c" SourceId="1" SourceUrl="http://localhost:8104/TranslationService/mex" />
+    <MetadataFile FileName="Common.Poco.xsd" MetadataType="Schema" ID="fbd862b1-ef31-45c4-9feb-7aad72b407d2" SourceId="1" SourceUrl="http://localhost:8104/TranslationService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

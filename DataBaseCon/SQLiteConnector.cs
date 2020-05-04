@@ -9,12 +9,17 @@ using Common.Poco;
 
 namespace DataBaseCon
 {
-    public class SQLiteConnector :IDbConnector
+    public class SQLiteConnector : IDbConnector
     {
+        NamesModel context;
         public NamesModel GetContext()
         {
-            NamesModel sqlontext = new NamesModel();
-            return sqlontext;
+            if (null == context)
+            {
+                context = new NamesModel();
+            }
+            
+            return context;
         }
         public async void SaveData(string hebrew, string english, bool isGoogle)
         {
@@ -23,17 +28,14 @@ namespace DataBaseCon
                 var data = await db.Names.ToListAsync();
                 foreach (var item in data)
                 {
-                    Console.WriteLine(item.English + " " + item.Hebrew);
+                    if (item.IsGoogle)
+                    {
+                        var newEntry = new Name() { DateUpdated = DateTime.Now.ToString(), DateCreated = DateTime.Now.ToString(), Hebrew = hebrew, English = english, IsGoogle = isGoogle };
+                        db.Names.Add(newEntry);
+                    }
                 }
-                var newEntry = new Name() { DateUpdated = DateTime.Now.ToString(), DateCreated = DateTime.Now.ToString(), Hebrew = hebrew, English = english, IsGoogle = isGoogle };
-                db.Names.Add(newEntry);
                 db.SaveChanges();
             }
-
-
-
-
-
         }
 
         public async Task<List<Name>> GetAllRecords()
@@ -60,7 +62,7 @@ namespace DataBaseCon
             }
         }
 
-        
+
     }
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2606d300-d8d5-4109-9f89-950efd210fb5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fcb45312-d3b3-4c6b-b52a-0fe9631491af" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:50914/Service.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="89b7960b-1364-4027-be95-0cdfe7501ca0" SourceId="1" SourceUrl="http://localhost:50914/Service.svc?disco" />
-    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="65afd471-e0e9-45c5-9348-c38dd9d65569" SourceId="1" SourceUrl="http://localhost:50914/Service.svc?xsd=xsd0" />
-    <MetadataFile FileName="GoogleBasedTranslator.wsdl" MetadataType="Wsdl" ID="f2a0c127-0684-4031-9974-6afc8d687456" SourceId="1" SourceUrl="http://localhost:50914/Service.svc?wsdl" />
-    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="7c9ffcf5-6d12-49de-a6e9-24237da622a8" SourceId="1" SourceUrl="http://localhost:50914/Service.svc?xsd=xsd2" />
-    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="9afdbe59-c2cc-444f-afd7-b7ab769d5ad3" SourceId="1" SourceUrl="http://localhost:50914/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="0aa5e5ca-6ac7-4488-b974-87763b618ecd" SourceId="1" SourceUrl="http://localhost:50914/Service.svc?disco" />
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="c37bb1ad-fea3-4ae5-9594-c942a37a1b8c" SourceId="1" SourceUrl="http://localhost:50914/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="GoogleBasedTranslator.wsdl" MetadataType="Wsdl" ID="f803d771-1fc0-44a7-b408-9dc32aaae089" SourceId="1" SourceUrl="http://localhost:50914/Service.svc?wsdl" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="46287ba2-b13b-4e9b-a57b-7bc437032d8c" SourceId="1" SourceUrl="http://localhost:50914/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="26e89371-96e1-4a22-883b-3bf689cd5a2c" SourceId="1" SourceUrl="http://localhost:50914/Service.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
