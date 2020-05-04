@@ -10,7 +10,7 @@ namespace TestClient
     {
         static void Main(string[] args)
         {
-            TS2.TranslatorClient c = new TS2.TranslatorClient();
+            TS3.TranslatorServiceClient c = new TS3.TranslatorServiceClient();
             Console.WriteLine(c.Translate("חיים קריכלי").English);
         }
     }

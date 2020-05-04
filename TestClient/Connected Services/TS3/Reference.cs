@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TestClient.TranslationService {
+namespace TestClient.TS3 {
     using System.Runtime.Serialization;
     using System;
     
@@ -139,48 +139,48 @@ namespace TestClient.TranslationService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="TranslationService.ITranslator")]
-    public interface ITranslator {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="TS3.ITranslatorService")]
+    public interface ITranslatorService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITranslator/Translate", ReplyAction="http://tempuri.org/ITranslator/TranslateResponse")]
-        TestClient.TranslationService.Name Translate(string HebrewText);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITranslatorService/Translate", ReplyAction="http://tempuri.org/ITranslatorService/TranslateResponse")]
+        TestClient.TS3.Name Translate(string HebrewText);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITranslator/Translate", ReplyAction="http://tempuri.org/ITranslator/TranslateResponse")]
-        System.Threading.Tasks.Task<TestClient.TranslationService.Name> TranslateAsync(string HebrewText);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITranslatorService/Translate", ReplyAction="http://tempuri.org/ITranslatorService/TranslateResponse")]
+        System.Threading.Tasks.Task<TestClient.TS3.Name> TranslateAsync(string HebrewText);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ITranslatorChannel : TestClient.TranslationService.ITranslator, System.ServiceModel.IClientChannel {
+    public interface ITranslatorServiceChannel : TestClient.TS3.ITranslatorService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class TranslatorClient : System.ServiceModel.ClientBase<TestClient.TranslationService.ITranslator>, TestClient.TranslationService.ITranslator {
+    public partial class TranslatorServiceClient : System.ServiceModel.ClientBase<TestClient.TS3.ITranslatorService>, TestClient.TS3.ITranslatorService {
         
-        public TranslatorClient() {
+        public TranslatorServiceClient() {
         }
         
-        public TranslatorClient(string endpointConfigurationName) : 
+        public TranslatorServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public TranslatorClient(string endpointConfigurationName, string remoteAddress) : 
+        public TranslatorServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public TranslatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public TranslatorServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public TranslatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public TranslatorServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public TestClient.TranslationService.Name Translate(string HebrewText) {
+        public TestClient.TS3.Name Translate(string HebrewText) {
             return base.Channel.Translate(HebrewText);
         }
         
-        public System.Threading.Tasks.Task<TestClient.TranslationService.Name> TranslateAsync(string HebrewText) {
+        public System.Threading.Tasks.Task<TestClient.TS3.Name> TranslateAsync(string HebrewText) {
             return base.Channel.TranslateAsync(HebrewText);
         }
     }
