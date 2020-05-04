@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DataBaseCon;
+using System.IO;
 
 namespace SqliteDbTests
 {
@@ -32,6 +33,8 @@ namespace SqliteDbTests
             {
                 var r1 = con.GetRecord(1);
                 Assert.IsNotNull(r1);
+                File.WriteAllText(@"c:\log\output.txt", r1.English);
+
                 Assert.AreEqual(r1.Hebrew, "משה");
                 Assert.AreEqual(r1.English, "Moshe");
             }

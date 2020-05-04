@@ -15,9 +15,8 @@ namespace TranslationService
     {
         public Name Translate(string HebrewText)
         {
-            IDbConnector connector = DbConnectorFactory.GetDbConnector();
             //TODO: get the cred location from settings
-            var translator = HebrewEnglishTranslator.TranslatorFactory.GetTranslator(@"C:\IISSites\TranslationService\Bin\cred.json", connector);
+            var translator = HebrewEnglishTranslator.TranslatorFactory.GetTranslator(@"C:\IISSites\TranslationService\Bin\cred.json");
 
             string firstName = GetFirstName(HebrewText);
             string LastName = GetLastName(HebrewText);

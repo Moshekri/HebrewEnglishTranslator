@@ -116,11 +116,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GoogleTranslator.cs" />
-    <Compile Include="LevenshteinDistance.cs" />
     <Compile Include="PhoneticTranslator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TranslationPicker.cs" />
     <Compile Include="Translator.cs" />
     <Compile Include="TranslatorFactory.cs" />
   </ItemGroup>
@@ -139,6 +136,10 @@
     <ProjectReference Include="..\DataBaseCon\DataBaseCon.csproj">
       <Project>{88321BB6-F948-4CF6-8778-2C4FD3B04213}</Project>
       <Name>DataBaseCon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TranslationQualityChecker\TranslationQualityChecker.csproj">
+      <Project>{7ca3a258-37ae-449c-abc3-6cef55535f5d}</Project>
+      <Name>TranslationQualityChecker</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

@@ -34,7 +34,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TranslationServiceWebSite", "TranslationServiceWebSite\", "{3A106774-3EC1-4566-8A14-B783886DD25E}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
-		ProjectReferences = "{6dae72b9-dc23-459f-a457-e20770543bc5}|Common.dll;{68ac3778-29f2-462e-bbb8-b495c319041c}|TranslationService.dll;{88321BB6-F948-4CF6-8778-2C4FD3B04213}|DataBaseCon.dll;{52BC1002-D0CB-4CC1-946F-2761A0321BAA}|HebrewEnglishTranslator.dll;"
+		ProjectReferences = "{6dae72b9-dc23-459f-a457-e20770543bc5}|Common.dll;{68ac3778-29f2-462e-bbb8-b495c319041c}|TranslationService.dll;{88321BB6-F948-4CF6-8778-2C4FD3B04213}|DataBaseCon.dll;{52BC1002-D0CB-4CC1-946F-2761A0321BAA}|HebrewEnglishTranslator.dll;{7CA3A258-37AE-449C-ABC3-6CEF55535F5D}|TranslationQualityChecker.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50914"
 		Debug.AspNetCompiler.PhysicalPath = "TranslationServiceWebSite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50914\"
@@ -53,6 +53,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TranslationServiceWebSite",
 		SlnRelativePath = "TranslationServiceWebSite\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationQualityChecker", "TranslationQualityChecker\TranslationQualityChecker.csproj", "{7CA3A258-37AE-449C-ABC3-6CEF55535F5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +94,10 @@ Global
 		{3A106774-3EC1-4566-8A14-B783886DD25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A106774-3EC1-4566-8A14-B783886DD25E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{3A106774-3EC1-4566-8A14-B783886DD25E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7CA3A258-37AE-449C-ABC3-6CEF55535F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA3A258-37AE-449C-ABC3-6CEF55535F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA3A258-37AE-449C-ABC3-6CEF55535F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA3A258-37AE-449C-ABC3-6CEF55535F5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +110,7 @@ Global
 		{6DAE72B9-DC23-459F-A457-E20770543BC5} = {4766A25E-2790-4BCB-9E40-39CE86DEF10D}
 		{68AC3778-29F2-462E-BBB8-B495C319041C} = {72C5B5E5-9FDD-42DB-B993-EC155990663E}
 		{3A106774-3EC1-4566-8A14-B783886DD25E} = {72C5B5E5-9FDD-42DB-B993-EC155990663E}
+		{7CA3A258-37AE-449C-ABC3-6CEF55535F5D} = {579AA02B-FDE5-4BA9-9A45-3769DBF08F8C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0DC1576-E0CE-4939-9A61-1C03F3DA593B}
