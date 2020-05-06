@@ -10,9 +10,9 @@ namespace HebrewEnglishTranslator
 {
     public static class TranslatorFactory
     {
-        public static ITranslator GetTranslator(string credFilePath,IDbConnector connector)
+        public static ITranslator GetTranslator(string credFilePath)
         {
-                       return new Translator(credFilePath,connector);
+            return new Translator(credFilePath);
         }
     }
 }

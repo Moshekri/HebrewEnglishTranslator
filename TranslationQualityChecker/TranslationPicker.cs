@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HebrewEnglishTranslator
+namespace TranslationQualityChecker
 {
-    internal static class TranslationPicker
+    public static class TranslationPicker
     {
         private static double GetGoogleTranslationQuality(string googleTranslation, string phoneticTranslation)
         {
@@ -28,14 +28,7 @@ namespace HebrewEnglishTranslator
             {
                 factor = 1.15;
             }
-            else if (googleTranslation.Length == phoneticTranslation.Length)
-            {
-                factor = 1;
-            }
-            else
-            {
-                factor = 1;
-            }
+           
             double lettersInGoogleTranslation = googleTranslation.Length;
             foreach (char letter in phoneticTranslation)
             {
@@ -51,7 +44,7 @@ namespace HebrewEnglishTranslator
                     }
                     else if (googleTranslation.Contains(letter.ToString()))
                     {
-                        hitCount = hitCount + (1 * factor);
+                        hitCount += (1 * factor);
                     }
                 }
             }
